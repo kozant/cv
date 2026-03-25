@@ -30,28 +30,36 @@ export const cvProfiles: Record<CvId, CvProfile> = {
     label: 'Frontend',
     name: sharedName,
     title: 'Frontend Engineer',
-    headline: 'React, Vue, TypeScript · UI, accessibility, SCSS',
+    headline: 'React, Redux, TypeScript · High-Performance UI & Real-time Systems',
     summary:
-      'Software developer with 6+ years of commercial TypeScript experience. Strong focus on product interfaces: React and Vue, SCSS, and accessible, performant UIs. Comfortable integrating with APIs and collaborating with PMs and cross-functional teams.',
+      'Frontend-focused Engineer with 7+ years of TypeScript experience. Specialist in high-performance interfaces, having achieved a 2.5x rendering speedup for a real-time PVP engine using Canvas/PixiJS. Currently developing cutting-edge security features showcased at Black Hat USA 2025. Expert in building accessible, scalable UIs and integrating low-latency communication via WebRTC and WebSockets.',
     skills: [
-      'React',
-      'Vue',
-      'TypeScript',
-      'JavaScript',
-      'SCSS / CSS',
-      'Responsive UI & accessibility',
-      'Git',
-      'CI/CD',
+      'React', 'Redux', 'TypeScript', 'JavaScript', 'SCSS / CSS',
+      'Canvas / PixiJS', 'WebRTC & WebSockets', 'Responsive UI & Accessibility',
+      'Unit Testing (Jest/Vitest)', 'Git', 'CI/CD'
     ],
     languages: sharedLanguages,
     experience: [
+      {
+        role: 'Full Stack Developer',
+        company: 'NDA (Web Game Project)',
+        period: 'May 2025 — Present',
+        highlights: [
+          'Engineered a 2.5x increase in match-time UI performance by optimizing PixiJS/Canvas rendering cycles and minimizing React reconciliation.',
+          'Developed a low-latency PVP gameplay interface using WebRTC for state synchronization and WebSockets for real-time events.',
+          'Architected a "Booster & Active Items" system with complex UI flows for real-time effect visualization.',
+          'Implemented synchronized rating updates and post-match transition flows using an event-driven frontend architecture.',
+        ],
+      },
       {
         role: 'Full Stack Engineer',
         company: 'Timspark',
         period: 'June 2024 — Present',
         highlights: [
-          'Built user interfaces for enterprise security analytics with emphasis on usability and accessibility.',
-          'Worked with project managers to align delivery with business goals and milestones.',
+          'Developed advanced security analytics features showcased at Black Hat USA 2025, focusing on high-density data visualization.',
+          'Reduced regression bugs and production issues by 40% through the implementation of a comprehensive Unit Testing suite.',
+          'Optimized frontend data-fetching logic, resulting in a 5x speed increase for critical analytical queries.',
+          'Architected accessible, enterprise-grade interfaces (WCAG) and modular UI components for security professionals.',
         ],
       },
       {
@@ -59,8 +67,9 @@ export const cvProfiles: Record<CvId, CvProfile> = {
         company: 'Kodan',
         period: 'October 2020 — June 2024',
         highlights: [
-          'Shipped intuitive flows for search, navigation, and booking in a high-traffic consumer product.',
-          'Collaborated on UX for Elasticsearch-powered search and filtering.',
+          'Designed a scalable microservices architecture using NestJS and GraphQL tailored for complex data operations.',
+          'Built an advanced search engine using Elasticsearch with custom relevance scoring and multi-parameter filtering.',
+          'Developed a robust payment integration layer and dynamic pricing engine for real-time inventory management.',
         ],
       },
       {
@@ -68,47 +77,50 @@ export const cvProfiles: Record<CvId, CvProfile> = {
         company: 'Renault Group, Minsk',
         period: 'October 2018 — October 2020',
         highlights: [
-          'Delivered HR and workforce tools, an online auction UI, and repair workflow dashboards.',
-          'Implemented a live video streaming experience for customers monitoring vehicle repairs.',
-          'Built call center interfaces with clearer workflows and better agent efficiency.',
+          'Delivered a real-time video streaming experience for vehicle repair monitoring, enhancing customer transparency.',
+          'Developed internal tools including an online car auction platform and automated HR workflow systems.',
         ],
       },
     ],
     education: sharedEducation,
     contacts: sharedContacts,
   },
+
   backend: {
     id: 'backend',
     label: 'Backend',
     name: sharedName,
     title: 'Backend Engineer',
-    headline: 'Node.js, NestJS, GraphQL · microservices & data platforms',
+    headline: 'Node.js, NestJS, GraphQL · Scalable Microservices & Real-time Systems',
     summary:
-      'Six years of commercial TypeScript experience building scalable backends: NestJS microservices, GraphQL, PostgreSQL, MongoDB, MySQL, Elasticsearch, and Redis. Docker, AWS, and CI/CD for reliable delivery.',
+      'Backend Engineer with 7 years of expertise in Node.js/NestJS microservices. Successfully boosted server responsiveness by 150% for a real-time PVP platform and led a full-scale architectural migration from Express to NestJS. Currently building high-performance backend systems for security features presented at Black Hat USA 2025, with a focus on 5x query optimization and rigorous testing.',
     skills: [
-      'Node.js',
-      'TypeScript',
-      'NestJS',
-      'GraphQL',
-      'Microservices',
-      'PostgreSQL',
-      'MongoDB',
-      'MySQL',
-      'Elasticsearch',
-      'Redis',
-      'Docker',
-      'AWS',
-      'CI/CD',
+      'Node.js', 'TypeScript', 'NestJS', 'GraphQL', 'Microservices',
+      'PostgreSQL', 'MongoDB', 'Elasticsearch', 'Redis',
+      'Docker', 'AWS', 'WebSocket & WebRTC', 'Unit/Integration Testing'
     ],
     languages: sharedLanguages,
     experience: [
+      {
+        role: 'Full Stack Developer',
+        company: 'NDA (Web Game Project)',
+        period: 'May 2025 — Present',
+        highlights: [
+          'Spearheaded a full backend migration from Express to NestJS, implementing a modular architecture.',
+          'Boosted server responsiveness by 150% during peak PVP matches through PostgreSQL query optimization and efficient WebSocket state management.',
+          'Engineered a real-time "Effect Resolution" engine for gameplay mechanics, ensuring consistent state across match participants.',
+          'Established automated CI/CD pipelines and deployment strategies for low-latency game servers.',
+        ],
+      },
       {
         role: 'Full Stack Engineer',
         company: 'Timspark',
         period: 'June 2024 — Present',
         highlights: [
-          'Optimized database queries and reliability under heavy load for security analytics workloads.',
-          'Partnered with cross-functional teams to diagnose and fix production issues.',
+          'Engineered critical backend components for security features presented at Black Hat USA 2025.',
+          'Achieved a 5x performance gain in data retrieval by optimizing complex SQL queries and indexing strategies for audit logs.',
+          'Significantly improved system reliability and reduced regression rates by introducing a strict Unit Testing culture.',
+          'Integrated high-load security APIs and ensured 99.9% ingestion reliability for enterprise analytics.',
         ],
       },
       {
@@ -116,10 +128,9 @@ export const cvProfiles: Record<CvId, CvProfile> = {
         company: 'Kodan',
         period: 'October 2020 — June 2024',
         highlights: [
-          'Designed and built a microservices platform with Node.js, NestJS, and GraphQL.',
-          'Implemented advanced search with Elasticsearch (filtering, relevance) for a yacht marketplace.',
-          'Integrated a secure payment gateway for online transactions.',
-          'Built high-throughput data infrastructure: microservices, ingestion pipelines, dynamic pricing with real-time updates.',
+          'Architected a high-throughput microservices platform using NestJS and GraphQL for a multi-tenant ecosystem.',
+          'Built scalable data infrastructure with Elasticsearch, implementing complex search algorithms and ingestion pipelines.',
+          'Developed secure, PCI-compliant payment integrations and a real-time dynamic pricing engine.',
         ],
       },
       {
@@ -127,52 +138,50 @@ export const cvProfiles: Record<CvId, CvProfile> = {
         company: 'Renault Group, Minsk',
         period: 'October 2018 — October 2020',
         highlights: [
-          'Developed web backends supporting HR, auctions, service workflows, and call center operations.',
-          'Focused on reliable task assignment, integrations, and analytics-friendly service design.',
+          'Built scalable backends for real-time video streaming and car auction bidding with high availability.',
+          'Automated internal workflows for HR and vehicle service centers, improving operational efficiency.',
         ],
       },
     ],
     education: sharedEducation,
     contacts: sharedContacts,
   },
+
   fullstack: {
     id: 'fullstack',
     label: 'Fullstack',
     name: sharedName,
     title: 'Full Stack Engineer',
-    headline: 'TypeScript · React, Vue, Node, NestJS · Minsk, Belarus',
+    headline: 'TypeScript · React, NestJS, Node.js · Real-time & High-Load Systems',
     summary:
-      'Results-driven software developer with 6 years of commercial experience in TypeScript. Proficient in front-end and back-end development using React, Vue, and Node.js. Experienced with scalable applications on NestJS and databases: PostgreSQL, MySQL, and MongoDB. Redis for caching, Docker for containerization, AWS for cloud, SCSS for styling, and a strong focus on high-quality code.',
+      'Full Stack Engineer with 7+ years of experience in the TypeScript ecosystem. Delivered a 250% performance gain for a real-time PVP platform and currently developing advanced security features showcased at Black Hat USA 2025. Proven ability to optimize end-to-end performance (up to 5x query speedup) and maintain high code quality through rigorous testing and modern architecture.',
     skills: [
-      'TypeScript',
-      'JavaScript',
-      'Node.js',
-      'React',
-      'Vue',
-      'NestJS',
-      'GraphQL',
-      'Microservices',
-      'PostgreSQL',
-      'MySQL',
-      'MongoDB',
-      'Elasticsearch',
-      'Redis',
-      'Docker',
-      'AWS',
-      'SCSS',
-      'CI/CD',
+      'TypeScript', 'React', 'Node.js', 'NestJS', 'GraphQL',
+      'PostgreSQL', 'Elasticsearch', 'Redis', 'Docker', 'AWS',
+      'WebRTC & WebSockets', 'Unit Testing', 'SCSS', 'CI/CD'
     ],
     languages: sharedLanguages,
     experience: [
+      {
+        role: 'Full Stack Developer',
+        company: 'NDA (Web Game Project)',
+        period: 'May 2025 — Present',
+        highlights: [
+          'Delivered an end-to-end PVP game platform: NestJS real-time backend + high-performance React/Canvas gameplay UI.',
+          'Improved overall match performance by 2.5x through full-stack optimization (server responsiveness + client-side rendering).',
+          'Developed a synchronized real-time gameplay mechanic system (boosters/active items) using WebRTC and WebSockets.',
+          'Migrated legacy Express services to a modular NestJS architecture without disrupting active gameplay flows.',
+        ],
+      },
       {
         role: 'Full Stack Engineer',
         company: 'Timspark',
         period: 'June 2024 — Present',
         highlights: [
-          'Developed user interfaces for enterprise security analytics; improved usability and accessibility.',
-          'Collaborated with project managers to align development with business objectives and milestones.',
-          'Optimized database queries for performance and reliability under heavy load.',
-          'Worked with cross-functional teams to troubleshoot issues and stabilize delivery.',
+          'Developed cutting-edge security features presented at Black Hat USA 2025, bridging complex backend logic with intuitive UI.',
+          'Optimized full-stack performance, achieving a 5x reduction in query latency for enterprise-level analytics.',
+          'Instituted a robust Unit Testing framework, resulting in a significantly more stable codebase and fewer production regressions.',
+          'Collaborated on high-density data dashboards with a focus on performance, accessibility, and modular design.',
         ],
       },
       {
@@ -180,11 +189,8 @@ export const cvProfiles: Record<CvId, CvProfile> = {
         company: 'Kodan',
         period: 'October 2020 — June 2024',
         highlights: [
-          'Built a scalable microservices platform with Node.js, NestJS, and GraphQL.',
-          'Delivered Elasticsearch-powered search and filtering for a yacht marketplace.',
-          'Integrated a secure payment gateway for online transactions.',
-          'Shipped intuitive interfaces for navigation and booking.',
-          'Established data infrastructure with NestJS microservices, ingestion pipelines, and dynamic pricing with real-time updates.',
+          'Built a scalable microservices platform (NestJS/GraphQL) and a custom search engine (Elasticsearch) for a yacht marketplace.',
+          'Shipped end-to-end features including secure payment integrations and real-time pricing updates.',
         ],
       },
       {
@@ -192,17 +198,14 @@ export const cvProfiles: Record<CvId, CvProfile> = {
         company: 'Renault Group, Minsk',
         period: 'October 2018 — October 2020',
         highlights: [
-          'Built an employee management tool for HR, attendance, and payroll.',
-          'Delivered an online auction platform for used cars with smooth bidding and transactions.',
-          'Optimized repair workflows with centralized task management for service businesses.',
-          'Created a live video streaming experience so customers could monitor repairs in real time.',
-          'Implemented a call center solution with streamlined inquiries and analytics.',
+          'Engineered a live video streaming experience and a car auction bidding system from the ground up.',
+          'Automated internal HR and workforce management processes, increasing daily inquiry processing efficiency.',
         ],
       },
     ],
     education: sharedEducation,
     contacts: sharedContacts,
   },
-}
+};
 
 export const cvOrder: CvId[] = ['frontend', 'backend', 'fullstack']
