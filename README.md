@@ -1,39 +1,101 @@
-# Резюме (Vite + React + TypeScript)
+# My CV
 
-Одна страница с тремя вариантами: **Frontend**, **Backend**, **Fullstack**. Данные правятся в [`src/cv/data.ts`](src/cv/data.ts). Активный вариант сохраняется в URL: `?v=frontend`, `?v=backend`, `?v=fullstack`.
+A modern, responsive CV website built with React, TypeScript, and Vite. Features PDF export functionality and dark mode support.
 
-## Команды (pnpm)
+## Features
 
-Если `pnpm` не найден в системе (Node 16+):
+- 📄 **PDF Export** — Download your CV as a PDF file with proper formatting
+- 🌓 **Dark Mode** — Automatic color scheme based on system preferences
+- 📱 **Responsive Design** — Works seamlessly on desktop, tablet, and mobile
+- ⚡ **Fast** — Built with Vite for optimal performance
+- 🎨 **Clean Design** — Modern, minimalist UI with professional styling
+- ♿ **Accessible** — Semantic HTML and ARIA attributes
 
-```bash
-corepack enable
-corepack prepare pnpm@9.15.9 --activate
-```
+## Tech Stack
 
-Дальше:
+- **React 19** — UI framework
+- **TypeScript** — Type-safe development
+- **Vite** — Build tool and dev server
+- **html2pdf.js** — PDF export
+- **CSS** — Custom styling with CSS variables
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 22+
+- pnpm 9+
+
+### Installation
 
 ```bash
 pnpm install
+```
+
+### Development
+
+```bash
 pnpm dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build
+
+```bash
 pnpm build
+```
+
+Outputs to `dist/` directory.
+
+### Preview
+
+```bash
 pnpm preview
 ```
 
-Версия pnpm зафиксирована в поле `packageManager` в `package.json` (удобно для Corepack).
+## Project Structure
 
-## Публикация на GitHub Pages
+```
+src/
+├── components/        # Reusable React components
+├── cv/               # CV data and types
+├── App.tsx           # Main app component
+├── index.css         # Global styles
+├── main.tsx          # Entry point
+└── exportPdf.ts      # PDF export logic
+```
 
-1. В репозитории **Settings → Pages**: источник — **GitHub Actions** (или ветка `gh-pages` / папка `dist` — как настроите).
-2. Если сайт будет по адресу `https://<user>.github.io/<repo>/`, при сборке задайте базовый путь:
+## Customization
 
-   ```bash
-   set VITE_BASE=/my-cv/
-   pnpm build
-   ```
+Edit your CV data in [`src/cv/data.ts`](src/cv/data.ts):
 
-   Замените `my-cv` на имя вашего репозитория. Для пользовательского сайта `username.github.io` в корне домена база по умолчанию `./` подойдёт.
+```typescript
+export const cvProfile: CvProfile = {
+  name: "Your Name",
+  title: "Your Title",
+  // ... other fields
+};
+```
 
-3. Загрузите содержимое папки `dist` в выбранный источник Pages.
+### Adding Sections
 
-В репозитории есть workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml): при пуше в `main` собирает проект и публикует `dist` на GitHub Pages (при необходимости поправьте `VITE_BASE` под имя репозитория).
+To add a new section:
+
+1. Create a component in `src/components/`
+2. Add data to `src/cv/data.ts`
+3. Import and render in [`src/App.tsx`](src/App.tsx)
+
+## Deployment
+
+This project is configured for GitHub Pages. Set the `VITE_BASE` environment variable during build:
+
+```bash
+VITE_BASE=/repository-name/ pnpm build
+```
+
+Or configure it in your GitHub Actions workflow (see [.github/workflows/pages.yml](.github/workflows/pages.yml)).
+
+## License
+
+MIT
