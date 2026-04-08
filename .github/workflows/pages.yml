@@ -2,7 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -28,8 +30,7 @@ jobs:
       - run: pnpm install
       - run: pnpm build
         env:
-          # Задайте в репозитории Variables → VITE_BASE = /имя-репо/ для github.io/имя-репо/
-          VITE_BASE: ${{ vars.VITE_BASE }}
+          VITE_BASE: /kozant/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
