@@ -30,7 +30,7 @@ jobs:
       - run: pnpm install
       - run: pnpm build
         env:
-          VITE_BASE: /kozant/
+          VITE_BASE: /cv/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
