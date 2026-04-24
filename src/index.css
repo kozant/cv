@@ -225,7 +225,7 @@ code {
 }
 
 .btn-export {
-  height: stretch;
+  min-height: 2.5rem;
   font: inherit;
   cursor: pointer;
   border: 1px solid var(--accent);
@@ -240,6 +240,9 @@ code {
   transition:
     opacity 0.15s,
     transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-export:hover:not(:disabled) {
@@ -455,8 +458,9 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 8px;
-  height: stretch;
   border-radius: 50%;
   border: var(--toggle-border);
   cursor: pointer;
