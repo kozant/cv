@@ -29,3 +29,7 @@ export interface CvProfile {
   education: EducationItem[];
   contacts: ContactItem[];
 }
+
+export type Theme = "light" | "dark";
+
+export type Lang = "EN" | "RU" | "BY";

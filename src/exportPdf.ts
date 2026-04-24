@@ -26,6 +26,10 @@ export async function exportCvToPdf(
   try {
     await waitForPaint();
 
+    const bgColor = getComputedStyle(document.documentElement)
+      .getPropertyValue("--bg")
+      .trim();
+
     const opt = {
       margin: [8, 8, 8, 8] as [number, number, number, number],
       filename,
@@ -38,7 +42,9 @@ export async function exportCvToPdf(
         scale: 2,
         useCORS: true,
         logging: false,
-        backgroundColor: "#ffffff",
+        backgroundColor: bgColor,
+        windowWidth: element.scrollWidth,
+        windowHeight: element.scrollHeight,
       },
       jsPDF: {
         unit: "mm",

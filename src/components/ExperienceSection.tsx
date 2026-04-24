@@ -1,16 +1,19 @@
 import type { FC } from "react";
-import type { ExperienceItem } from "../cv/types";
+import type { Lang, ExperienceItem } from "../cv/types";
+import { content } from "../cv/data";
 
 interface ExperienceSectionProps {
+  lang: Lang;
   experience: ExperienceItem[];
 }
 
 export const ExperienceSection: FC<ExperienceSectionProps> = ({
+  lang,
   experience,
 }) => {
   return (
     <section className="block">
-      <h2>Experience</h2>
+      <h2>{content[lang].experienceSectionTitle}</h2>
       <ul className="timeline">
         {experience.map((job, index) => (
           <li key={`job-${index}-${job.company}`}>
