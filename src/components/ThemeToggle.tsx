@@ -35,7 +35,11 @@ export default function ThemeToggle() {
 
   return (
     <div className="theme-toggle" onClick={handleChangeTheme}>
-      {theme === "light" ? <LightModeIcon /> : <DarkModeIcon />}
+      {theme === "light" ? (
+        <DarkModeIcon sx={{ color: "#475569" }} />
+      ) : (
+        <LightModeIcon sx={{ color: "#f59e0b" }} />
+      )}
     </div>
   );
 }
