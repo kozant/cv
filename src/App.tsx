@@ -45,7 +45,8 @@ export function App() {
     summary,
     skills,
     languages,
-    experience,
+    commercialExperience,
+    petExperience,
     education,
     contacts,
   } = cvProfiles[lang];
@@ -74,7 +75,8 @@ export function App() {
         />
         <SkillsSection skills={skills} lang={lang} />
         <LanguagesSection languages={languages} lang={lang} />
-        <ExperienceSection experience={experience} lang={lang} />
+        <ExperienceSection experience={commercialExperience} lang={lang} />
+        <ExperienceSection experience={petExperience} isPet lang={lang} />
         <EducationSection education={education} lang={lang} />
         <ContactSection contacts={contacts} lang={lang} />
       </main>

@@ -1,7 +1,8 @@
 export interface ExperienceItem {
   role: string;
-  company: string;
+  company?: string;
   period: string;
+  description: string;
   highlights: string[];
 }
 
@@ -25,7 +26,8 @@ export interface CvProfile {
   summary: string;
   skills: string[];
   languages?: string[];
-  experience: ExperienceItem[];
+  commercialExperience: ExperienceItem[];
+  petExperience: ExperienceItem[];
   education: EducationItem[];
   contacts: ContactItem[];
 }

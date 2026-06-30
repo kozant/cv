@@ -360,18 +360,35 @@ code {
 }
 
 .job-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   font-weight: 600;
 }
 
+.job-icon {
+  height: 20px;
+  cursor: pointer;
+}
+
 .job-meta {
-  color: var(--muted);
+  color: var(--text);
   font-size: 0.92rem;
+}
+
+.job-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--muted);
+  line-height: 1.45;
 }
 
 .bullets {
   margin: 0.5rem 0 0;
   padding-left: 1.15rem;
   color: var(--muted);
+  font-size: 0.95rem;
+  list-style-type: disc;
 }
 
 .bullets li {
